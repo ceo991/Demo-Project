@@ -16,7 +16,6 @@ public class Hexagon : MonoBehaviour
     [SerializeField] private Vector2 lerpPosition;
     [SerializeField] private bool lerp;
     
-    private bool bomb;
     private int bombTimer;
 
     private TextMesh text;
@@ -73,12 +72,6 @@ public class Hexagon : MonoBehaviour
         SetRow(newRow);
         SetColumn(newColumn);
         lerp = true;
-    }
-
-    //Returns the lerp status 
-    public bool IsRotating()
-    {
-        return lerp;
     }
 
     //Building a struct from grid position of neighbour hexagons and returns it 
@@ -145,7 +138,7 @@ public class Hexagon : MonoBehaviour
         transform.DOScale(new Vector3(1f, 1f, 1f), 0.5f);
     }
 
-    //Special version of ChangeWorldPosition adds a delay to the method
+    //Coroutine for ChangeWorldPosition, adds a delay to the method
     public IEnumerator WaitToChangePosition(float t, Vector3 newPos)
     {
         yield return new WaitForSeconds(t);
