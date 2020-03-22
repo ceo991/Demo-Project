@@ -20,7 +20,6 @@ public class Hexagon : MonoBehaviour
     private int bombTimer;
 
     private TextMesh text;
-    private DOTweenAnimation bombAnim;
     private SpriteRenderer spriteRenderer;
 
     //Struct for holding neighbour coordinates
