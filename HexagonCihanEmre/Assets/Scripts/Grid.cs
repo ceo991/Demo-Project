@@ -24,7 +24,6 @@ public class Grid : MonoBehaviour
     [SerializeField] private int explodedCount;
     [SerializeField] private int explodedGroupCount;
 
-    private bool colorblindMode;
     private bool bombProduction;
     private bool gameOver;
 
