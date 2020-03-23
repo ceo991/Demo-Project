@@ -38,7 +38,6 @@ public class Grid : MonoBehaviour
     [SerializeField] private List<Color> hexColorListContainer; //This is for adjusting the color count and values from editor
     private List<Color> hexColorList;
 
-    private bool gameInitializiationStatus;
     private bool hexRotation;
     private bool hexExplosion;
     private bool hexProduction;
